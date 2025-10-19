@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card | Frontend Wizards Stage 0</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <main>
+    <article class="profile-card" data-testid="test-profile-card">
+      <figure class="avatar">
+        <img
+          src="/asset/userimg.jpg"
+          alt="User Avatar"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div class="profile-details">
+        <header>
+          <h2 data-testid="test-user-name" aria-label="User Name">Alagbe Hamzah (hprime)</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          Frontend engineer passionate about crafting beautiful, accessible UIs. When not coding, I explore new coffee blends ☕ and futuristic tech.
+        </p>
+
+        <p class="time">
+          Current Time (ms): 
+          <span id="time" data-testid="test-user-time"></span>
+        </p>
+
+        <nav class="social" aria-label="Social Links" data-testid="test-user-social-links">
+          <ul>
+            <a href="https://x.com/hprime0" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a>
+            <a href="https://github.com/Alagham" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a>
+            <a href="www.linkedin.com/in/hamzah-adegbola-alagbe" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a>
+          </ul>
+        </nav>
+
+        <section aria-labelledby="hobbies-title">
+          <h3 id="hobbies-title">Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Team work</li>
+            <li>problem solving</li>
+            <li>Logical Reasoning</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="dislikes-title">
+          <h3 id="dislikes-title">Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Slow Wi-Fi</li>
+            <li>Messy Code</li>
+            <li>Unclear Documentation</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
