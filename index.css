@@ -58,6 +58,8 @@ body {
   mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: destination-out;
+  pointer-events: none;
+
 }
 
 .profile-card:hover {
@@ -112,6 +114,7 @@ body {
   gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
+  list-style: none;
 }
 
 .social a {
