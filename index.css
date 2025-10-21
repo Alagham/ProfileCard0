@@ -275,7 +275,6 @@ button[type="submit"]:hover {
   display: none;
 }
 
-/* === RESPONSIVE DESIGN === */
 @media (min-width: 700px) {
   .profile-card {
     flex-direction: row;
